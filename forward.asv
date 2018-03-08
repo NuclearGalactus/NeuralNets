@@ -1,0 +1,7 @@
+function output = forward(x, w1,w2)
+z2 = x_data * w1;
+a2 = sigmoid(z2);
+z3 = a2 * w2;
+%predicted value
+yhat = sigmoid(z3);
+cost = sum(0.5 * (y_data - yhat).^2);
